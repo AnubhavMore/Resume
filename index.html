@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container" id="wide-screen">
+        <div class="items item1">
+            <img src="./images/anubhav.jpeg" alt="" class="img-main"> 
+            <div class="content">
+                <h2>Anubhav Alok More</h2>
+                <p> Developer </p>
+                <div class="icons">
+                    <a target="_blank" href="https://m.facebook.com/anubhav.more.526?eav=AfbotsqH3YwcO2-JmCPRBO-LpDBVT8MTFlF1WFDq6XsoCT2JTSijSg6nEJA0mifmi9o&refid=8&paipv=0">
+                    <img src="./images/facebook-svgrepo-com.svg" alt="" class="img-icons" ></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/anubhav-more-9b345a250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img src="./images/linkedin-svgrepo-com.svg" alt="" class="img-icons"></a>
+                    <a target="_blank" href="https://www.instagram.com/moreanubhav/">
+                    <img src="./images/instagram-svgrepo-com.svg" alt="" class="img-icons"></a>
+                    <a target="_blank" href="https://x.com/MoreAnubhav?t=XaZ1W7_6T_01ei8q-TDi-Q&s=08">
+                    <img src="./images/twitter-svgrepo-com.svg" alt="" class="img-icons"></a>
+                    <a target="_blank" href="https://github.com/AnubhavMore">
+                        <img src="./images/github-svgrepo-com.svg" alt="" class="img-icons" ></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="items item2 navbar">
+            <button onclick="scrollToSection('about-me')">About Myself</button>
+            <button onclick="scrollToSection('graduation')">Graduation</button>
+            <button onclick="scrollToSection('skills')">Skills</button>
+            <button onclick="scrollToSection('projects')">Projects</button>
+        </div>
+        <div class="items item3">
+            <section class="text-content" id="about-me">
+                <h1>ABOUT MYSELF</h1>
+               <p>Hello! I'm <span style="color:rgb(0, 255, 106)">Anubhav More</span>, a passionate and driven <span style="color:rgb(0, 255, 106)">WEB DEVELOPER</span> enthusiast with a knack for problem-solving and innovation. My journey into the world of Development began with a profound curiosity and a determination to make a difference. I thrive on challenges, constantly seeking opportunities to learn and grow both personally and professionally.</p>
+            </section>
+            <section class="text-content "id="graduation">
+                <h1>GRADUATION</h1>
+               <p>I am currently pursuing my <span style="color:rgb(0,255,106)"> B.TECH </span> from <span style="color:rgb(0,255,106)">NATIONAL INSTITUTE OF TECHNOLOGY CALICUT</span> in the domain of <span style="color:rgb(0,255,106)">ELECTRICAL ENGINEERING</span>. During my academic journey, I came across the Development , gaining valuable insights and honing my skills through rigorous hackathons and hands-on projects.</p>
+            </section>
+            <section class="text-content "id="skills">
+                <h1>SKILLS</h1>
+               <p>Proficient in a wide range of technologies and tools, I possess expertise in <span style="color:rgb(0, 255, 106)">Java, Javascript, C&C++, Html and CSS, Python </span>and many more other languages. My skill set encompasses both technical prowess and soft skills, allowing me to effectively communicate complex ideas, collaborate with diverse teams, and adapt to dynamic work environments. I am committed to staying updated with the latest advancements in the field o Development And Coding, ensuring that I remain at the forefront of innovation.</p>
+            </section>
+            <section class="text-content "id="projects">
+                <h1>PROJECTS</h1>
+               <p>Throughout my academic journey, I have had the opportunity to work on a myriad of projects that have allowed me to apply my skills and creativity to real-world challenges. Some notable projects include <span style="color:rgb(0, 255, 106)">TICTACTOE Game Using Purely Javascript HTML CSS</span> , <span style="color:rgb(0, 255, 106)">LEVLEGAL, which is website for a startup which helps to build business legally</span> & <span style="color:rgb(0, 255, 106)">WORD AUTOMATION, in which you have to give data in some given template of excel file which is also given by the user and after running that code it will give excel file with those data</span>.The Github links for these projects are provided below. These experiences have not only enriched my knowledge but have also instilled in me a sense of accomplishment and a drive to continue pushing the boundaries of what is possible in Development.
+               </p>
+               <span style="font-size: 3rem;">LEVLEGAL: <a href="https://levlegal.in/" target="_blank" style="color:green">levlegal.in</a></span>
+               <span style="font-size: 3rem;">TICTACTOE: <a href="https://anubhavmore.github.io/TicTacToe/" target="_blank" style="color:green">anubhavmore.github.io/TicTacToe/</a></span>
+               <span style="font-size: 3rem;">AUTOMATION WORD: <a href="https://github.com/AnubhavMore/automation-word" target="_blank" style="color:green">Github Repository</a></span>
+              
+            </section>
+        </div>
+        
+    </div>
+    <script>
+           // Get all buttons with the class 'myButton'
+            var buttons = document.querySelectorAll('button');
+
+            // Function to handle button clicks
+            function handleClick(event) {
+            // Remove 'button-clicked' class from all buttons
+            buttons.forEach(function(button) {
+                button.classList.remove('button-clicked');
+            });
+
+            // Add 'button-clicked' class to the clicked button
+            event.target.classList.add('button-clicked');
+            }
+
+            // Add click event listeners to all buttons
+            buttons.forEach(function(button) {
+            button.addEventListener('click', handleClick);
+            });
+
+                function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+</body>
+</html>
